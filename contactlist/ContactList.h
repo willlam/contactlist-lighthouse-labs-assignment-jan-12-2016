@@ -10,4 +10,7 @@
 
 @interface ContactList : NSObject
 
+@property (nonatomic, strong) NSMutableArray *contacts;
+
 @end
+

@@ -12,11 +12,14 @@
 
 -(NSString *)inputForPrompt:(NSString *)promptString
 {
+  // ask prompt
   NSLog(@"%@", promptString);
   
+  // collect prompt
   char input[255];
   fgets(input, 255, stdin);
   
+  // return prompt
 NSString *inputString = [NSString stringWithUTF8String:input];
   inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
   return inputString;
