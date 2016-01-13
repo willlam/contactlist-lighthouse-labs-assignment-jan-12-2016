@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Contact : NSObject
-
+//- (instancetype)initW
 @end
