@@ -10,12 +10,20 @@
 
 @implementation ContactList
 
--(instancetype)init {
-    self = [super init];
-    if (self) {
-       _contacts = [[NSMutableArray alloc] init];
-    }
-    return self;
+- (instancetype)init {
+	self = [super init];
+	if (self) {
+		_contacts = [[NSMutableArray alloc] init];
+	}
+	return self;
+}
+
+- (void)printContactList {
+	for (int index = 0; index < self.contacts.count; index++) {
+		Contact *dude = self.contacts[index];
+//		NSLog(@"%@", dude.description);
+		NSLog(@"%@ %@", dude.fullname, dude.email);
+	}
 }
 
 @end

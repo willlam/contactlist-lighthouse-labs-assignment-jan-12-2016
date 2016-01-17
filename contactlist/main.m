@@ -39,6 +39,10 @@
         [contactList.contacts addObject:user];
         NSLog(@"%@", contactList.contacts);
       }
+      else if ([userSelection isEqual:@"list"]) {
+       // print list of contacts following this format #:<full name>()
+        [contactList printContactList];
+      }
       
     }
     

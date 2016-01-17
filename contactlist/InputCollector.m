@@ -21,7 +21,8 @@
   
   // return prompt
 NSString *inputString = [NSString stringWithUTF8String:input];
-  inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//  inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+  inputString = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
   return inputString;
 }
 
